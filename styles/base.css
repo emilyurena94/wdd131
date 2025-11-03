@@ -46,6 +46,11 @@ nav a:hover {
     background-color: #4b0082;
 }
 
+/* ======= Main ======= */
+main {
+    padding: 20px;
+    text-align: center;
+}
 
 /* ======= Blocks Container ======= */
 
@@ -139,3 +144,4 @@ footer {
 footer p{
   margin: 5px 0;
 }
+
