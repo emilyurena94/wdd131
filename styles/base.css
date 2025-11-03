@@ -46,12 +46,11 @@ nav a:hover {
     background-color: #4b0082;
 }
 
-/* ======= Main ======= */
+/* ======= Main Content ======= */
 main {
-    padding: 20px;
     text-align: center;
-}
-
+    padding: 20px;
+    
 /* ======= Blocks Container ======= */
 
 .blocks-container {
@@ -144,4 +143,5 @@ footer {
 footer p{
   margin: 5px 0;
 }
+
 
