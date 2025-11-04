@@ -49,14 +49,13 @@ main {
     text-align: center;
     padding: 20px;
 }
-
-/* ======= Blocks Container ======= */
+/*====== Blocks Container ======*/
 .blocks-container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
     gap: 20px;
+    justify-content: center;
 }
-
 /* ======= Each Block  ======= */
 .block {
     border: 2px solid #aab0e4;
