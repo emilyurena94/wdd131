@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Japan Travel Guide</title>
+  <title>Japan Travel Guide - Tokio, Japan</title>
+  <meta name="description" content="Explore the rich culture, delicious cuisine, and beautiful weather of Japan. Your ultimate travel guide to Tokio, Japan.">
+  <meta name="author" content="Emily Ureña">
   <link rel="stylesheet" href="styles/place.css">
   <script defer src="scripts/place.js"></script>
 </head>
 <body>
 
-  <div class="panel">
+  <div class="panel"></div>
     <div class="barra"></div>
-  <header>
-    <h1>Japan</h1>
+    <header>
+    <h1>Japan Travel Guide</h1>
     <nav>
       <ul>
         <li><a href="#culture">Culture</a></li>
@@ -25,6 +27,8 @@
   <main>
     <section id="hero">
       <picture>
+        <source type="image/webp" media="(min-width: 768px)" srcset="images/japan.webp">
+        <source type="image/webp" srcset="images/japan.webp">
         <source media="(min-width: 768px)" srcset="images/japan.jpg">
         <img src="images/japan.jpg" alt="Mount Fuji in Japan">
       </picture>
@@ -45,7 +49,11 @@
     </section>
 
     <section id="weather">
-      <h2><strong>Weather</strong><span class="weather-icon"></span></h2>
+      <h2><strong>Weather</strong><span class="weather-icon"></span>
+      <svg class="weather-svg" width="24" height="24" viewBox="0 0 24 24" fill="#6a0dad" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 18H6a4 4 0 1 1 .8-7.9A6 6 0 1 1 19 18z"/>
+      </svg>
+      </h2>
       <div class="weather-data">
         <p><strong>Temperature: </strong><span id="temperature">5</span>°C</p>
         <p><strong>Conditions: </strong><span id="conditions">Cloudy</span></p>
@@ -60,5 +68,6 @@
     <p>Last modified: <span id="lastmodified"></span></p>
   </footer>
   <div class="barra"></div>
+</div>
 </body>
 </html>
