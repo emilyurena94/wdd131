@@ -1,73 +1,82 @@
-<!Doctype html>
-<html lang="en-US"> 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=place.html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Emily Ureña</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Emily Ureña - about me">
-    <meta name="author" content="Emily Ureña">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles/base.css">
-    <!-- JS -->
-    <script src="scripts/getdates.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japan Travel Guide - Tokio, Japan</title>
+  <meta name="description" content="Explore the rich culture, delicious cuisine, and beautiful weather of Japan. Your ultimate travel guide to Tokio, Japan.">
+  <meta name="author" content="Emily Ureña">
+  <link rel="stylesheet" href="styles/place.css">
+  <script defer src="scripts/place.js"></script>
 </head>
 <body>
+
+  <div class="panel">
+
+    <div class="barra"></div>
+
     <header>
-        <span id="course-title">WDD 131 - Dynamic Web Fundamentals - Emily Ureña</span>
-        <nav>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/emily-ure%C3%B1a-355b72357/" target="_blank">Linkedin</a></li>
-                <li><a href="https://byupw.instructure.com/about/43048" target="_blank">Canvas</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study?lang=spa" target="_blank">Scripture</a></li>
-                <li><a href="wwr/" target="_blank">Final Project</a></li>
-            </ul>
-        </nav>
+      <h1>Japan Travel Guide</h1>
+      <nav>
+        <ul>
+          <li><a href="#culture">Culture</a></li>
+          <li><a href="#food">Food</a></li>
+          <li><a href="#weather">Weather</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <h1>Emily Ureña</h1>
-        <div class="blocks-container">
-            <!--Block 1-->
-            <div class="block">
-                <section class="card">
-                    <h2>About Me</h2>
-                    <div class="content">
-                        <p>Hi! My name is Emily Ureña and I am from La Chorrera, Panama. Purple its my favorite color, but I really love black. I am studing software development and I hope to leran as much as I can, to improve my professional skills. I love Lasaña and I also know how to do Carlota.</p>
-                        <img src="images/profile.jpg" alt="Hello my name is Emily Ureña" width="200">
-                    </div>
-                </section>
 
-                <section class="card">
-                    <h2>La Chorrera, Panama</h2>
-                    <div class="content reverse">
-                        <img src="images/contry.png" alt="Flag of Panama" width="200">
-                        <p> I was born in Panama on July 7, 2007. My family calls me "the 7/7/7 girl." I've lived here for all 18 of my years, but I've traveled to Costa Rica, Colombia, Curaçao, and Bonaire on a trip when I was 15. The weather in my country can vary greatly from day to day; one day it might be very hot, and the next it might rain all day.</p>
-                    </div>
-                </section>
-            </div>
-            <!--Block 2-->
-            <div class="block">
-                <h2>Web dev Resources</h2>
-                <ul>
-                    <li><a href="https://dev.to/" target="_blank">MDN Web Docs</a></li>
-                    <li><a href="https://www.smashingmagazine.com/" target="_blank">smashingmagazine</a></li>
-                    <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
-                    <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
-                    <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
-                    <li><a href="https://placehold.co/" target="_blank">Image Placeholder</a></li>
-                </ul>
-            </div>
+      <section id="hero">
+        <picture>
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/japan.webp">
+          <source type="image/webp" srcset="images/japan.webp">
+          <source media="(min-width: 768px)" srcset="images/japan.jpg">
+          <img src="images/japan.jpg" alt="Mount Fuji in Japan">
+        </picture>
+      </section>
+
+      <section id="data">
+        <h2><strong>Data</strong></h2>
+        <div class="data-grid">
+          <p><strong>Area:</strong><span id="area"> 377.975</span> km²</p>
+          <p><strong>Population:</strong><span id="population"> 128.548.720</span></p>
+          <p><strong>Capital:</strong><span id="capital"> Tokio</span></p>
+          <p><strong>Languages:</strong><span id="languages"> Japanese</span></p>
+          <p><strong>Currency:</strong><span id="currency"> Yen </span> ¥</p>
+          <p><strong>Time Zone:</strong><span id="timeZone"> JST (UTC +9)</span></p>
+          <p><strong>Calling Code:</strong><span id="callingCode"> +81</span></p>
+          <p><strong>Internet TLD:</strong><span id="internetTLD"> .jp</span></p>
         </div>
+      </section>
+
+      <section id="weather">
+        <h2>
+          <strong>Weather</strong>
+          <span class="weather-icon"></span>
+          <svg class="weather-svg" width="24" height="24" viewBox="0 0 24 24" fill="#6a0dad" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 18H6a4 4 0 1 1 .8-7.9A6 6 0 1 1 19 18z"/>
+          </svg>
+        </h2>
+        <div class="weather-data">
+          <p><strong>Temperature: </strong><span id="temperature">5</span>°C</p>
+          <p><strong>Conditions: </strong><span id="conditions">Cloudy</span></p>
+          <p><strong>Wind Speed: </strong><span id="windSpeed">20</span> km/h</p>
+          <p><strong>Wind Chill: </strong><span id="windChill">8</span>°C</p>
+        </div>
+      </section>
+
     </main>
+
     <footer>
-        <p><span id="currentyear"></span> 🌞 Emily Ureña 🌞 La Chorrera, Panama. </p>
-        <p>Last modified: <span id="lastmodified"></span></p>
+      <p> ©<span id="currentyear"></span> 🌞 Emily Ureña 🌞 La Chorrera, Panama. </p>
+      <p>Last modified: <span id="lastmodified"></span></p>
     </footer>
+
+    <div class="barra"></div>
+
+  </div> 
+
 </body>
 </html>
