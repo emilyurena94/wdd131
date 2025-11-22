@@ -121,6 +121,9 @@ h2 {
 }
 
 @media (min-width: 600px) {
+  body{
+    background-color: var(--light-gray);
+  }
   .panel {
     max-width: 400px; 
   }
@@ -128,7 +131,11 @@ h2 {
   nav ul {
     gap: 2rem; 
   }
+   h2{
+      font-size: 1.6rem;
+    }
 }
+
 
 footer { 
   background-color: var(--primary); 
@@ -136,4 +143,5 @@ footer {
   text-align: center; 
   padding: 1rem; 
 }
+
 
