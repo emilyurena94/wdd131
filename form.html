@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Review your purchased products and provide ratings for quality, performance, and features.">
+  <meta name="author" content="Emily Ureña">
+  
   <title>Product Review</title>
   <link rel="stylesheet" href="styles/form.css">
   <script src="scripts/products.js" defer></script>
@@ -28,23 +31,23 @@
           <fieldset class="rating-stars">
           <legend>Overall Rating:</legend>
 
-          <div class="star-rating">
-            <input type="radio" id="star5" name="rating" value="5" required>
-            <label for="star5">★</label>
+           <div class="star-rating">
+              <input type="radio" id="star5" name="rating" value="5" required>
+              <label for="star5">★</label>
 
-            <input type="radio" id="star4" name="rating" value="4">
-            <label for="star4">★</label>
+              <input type="radio" id="star4" name="rating" value="4" required>
+              <label for="star4">★</label>
 
-            <input type="radio" id="star3" name="rating" value="3">
-            <label for="star3">★</label>
+              <input type="radio" id="star3" name="rating" value="3" required>
+              <label for="star3">★</label>
 
-            <input type="radio" id="star2" name="rating" value="2">
-            <label for="star2">★</label>
+              <input type="radio" id="star2" name="rating" value="2" required>
+              <label for="star2">★</label>
 
-            <input type="radio" id="star1" name="rating" value="1">
-            <label for="star1">★</label>
-          </div>
-        </fieldset>
+              <input type="radio" id="star1" name="rating" value="1" required>
+              <label for="star1">★</label>
+            </div>
+          </fieldset>
 
         <!-- INSTALLATION DATE -->
         <label for="installDate">Date of Installation:</label>
@@ -54,10 +57,17 @@
         <fieldset class="features">
           <legend>Useful Features:</legend>
 
-          <label class="inline"><input type="checkbox" name="features" value="durability"> Durability</label>
-          <label class="inline"><input type="checkbox" name="features" value="design"> Design</label>
-          <label class="inline"><input type="checkbox" name="features" value="ease"> Ease of Use</label>
-          <label class="inline"><input type="checkbox" name="features" value="performance"> Performance</label>
+            <input type="checkbox" id="durability" name="features" value="durability">
+            <label class="inline" for="durability">Durability</label>
+
+            <input type="checkbox" id="design" name="features" value="design">
+            <label class="inline" for="design">Design</label>
+
+            <input type="checkbox" id="ease" name="features" value="ease">
+            <label class="inline" for="ease">Ease of Use</label>
+
+            <input type="checkbox" id="performance" name="features" value="performance">
+            <label class="inline" for="performance">Performance</label>
         </fieldset>
 
         <!-- OPTIONAL REVIEW -->
@@ -81,3 +91,4 @@
   </div>
 </body>
 </html>
+
