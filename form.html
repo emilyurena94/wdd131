@@ -1,1 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Review</title>
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/products.js" defer></script>
+  <script src="scripts/form.js"></script>
+</head>
 
+<body>
+  <div class="container">
+    <header>
+      <h1>Product Review</h1>
+    </header>
+
+    <main>
+      <form action="review.html" method="get" class="review-form">
+
+        <!-- PRODUCT SELECT  -->
+        <label for="productName">Product Name:</label>
+        <select id="productName" name="productName" required>
+          <option value="" disabled selected>Select a Product...</option>
+        </select>
+
+          <!-- RATING WITH STARS -->
+          <fieldset class="rating-stars">
+          <legend>Overall Rating:</legend>
+
+          <div class="star-rating">
+            <input type="radio" id="star5" name="rating" value="5" required>
+            <label for="star5">★</label>
+
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">★</label>
+
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">★</label>
+
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">★</label>
+
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">★</label>
+          </div>
+        </fieldset>
+
+        <!-- INSTALLATION DATE -->
+        <label for="installDate">Date of Installation:</label>
+        <input type="date" id="installDate" name="installDate" required>
+
+        <!-- CHECKBOXES -->
+        <fieldset class="features">
+          <legend>Useful Features:</legend>
+
+          <label class="inline"><input type="checkbox" name="features" value="durability"> Durability</label>
+          <label class="inline"><input type="checkbox" name="features" value="design"> Design</label>
+          <label class="inline"><input type="checkbox" name="features" value="ease"> Ease of Use</label>
+          <label class="inline"><input type="checkbox" name="features" value="performance"> Performance</label>
+        </fieldset>
+
+        <!-- OPTIONAL REVIEW -->
+        <label for="writtenReview">Written Review (optional):</label>
+        <textarea id="writtenReview" name="writtenReview" rows="3"></textarea>
+
+        <!-- OPTIONAL NAME -->
+        <label for="userName">User Name (optional):</label>
+        <input type="text" id="userName" name="userName">
+
+        <!-- SUBMIT -->
+        <button type="submit">Submit Review</button>
+
+      </form>
+    </main>
+
+    <footer>
+      <p><span id="currentyear"></span> ©2025 🌞 Emily Ureña 🌞 La Chorrera, Panama. </p>
+      <p>Last modified: <span id="lastmodified"></span></p>
+    </footer>
+  </div>
+</body>
+</html>
