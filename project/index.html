@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BLACKPINK Fanpage</title>
+  <link rel="stylesheet" href="styles/bp.css" />
+</head>
+<body>
+  <header>
+    <h1>BLACKPINK Fanpage</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="members.html">Members</a>
+      <a href="discography.html">Discography</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Welcome to the BLACKPINK Fanpage</h2>
+      <p>Explore the members, their music, and their journey as one of the most iconic K-pop groups.</p>
+    </section>
+
+    <!-- Juego 1: Adivina el miembro -->
+    <section id="game-guess">
+      <h2>Guess the Member!</h2>
+      <p>Type a member's name (Jisoo, Jennie, Rosé, Lisa) and see if you guess right!</p>
+      <input id="userGuess" type="text" placeholder="Write a member's name">
+      <button onclick="playGuess()">Guess!</button>
+      <p id="resultGuess"></p>
+    </section>
+
+    <!-- Juego 2: True/False Quiz -->
+    <section id="game-quiz">
+      <h2>True or False Quiz</h2>
+      <p>Answer true or false to the questions below!</p>
+      <button onclick="quizQuestion()">Next Question</button>
+      <p id="quizQuestion"></p>
+      <input id="quizAnswer" type="text" placeholder="true / false">
+      <button onclick="checkAnswer()">Submit Answer</button>
+      <p id="quizResult"></p>
+      <p id="quizScore"></p>
+    </section>
+
+    <!-- Juego 3: Frases al azar -->
+    <section id="game-quote">
+      <h2>Random BLACKPINK Quote</h2>
+      <button onclick="showQuote()">Show a Quote</button>
+      <p id="quoteDisplay"></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 BLACKPINK Fanpage — Created by Emily</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="scripts/bp.js"></script>
+</body>
+</html>
