@@ -1,1 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BLACKPINK Discography</title>
+<link rel="stylesheet" href="styles/bp.css">
+<style>
+/* ===== Estilos para carrusel ===== */
+.album-section {
+  margin: 2rem 0;
+}
 
+.album-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff66b2; /* rosa BLACKPINK */
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.song-card {
+  min-width: 250px;
+  margin-right: 1rem;
+  background: #111;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.song-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 40%;
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.carousel-btn.left {
+  left: 0.5rem;
+}
+
+.carousel-btn.right {
+  right: 0.5rem;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>BLACKPINK Discography</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="members.html">Members</a>
+    <a href="discography.html">Discography</a>
+    <a href="gallery.html">Gallery</a>
+  </nav>
+</header>
+
+<main>
+  <!-- ===== Álbum 1: Square One ===== -->
+  <section class="album-section">
+    <h2 class="album-title">Square One (2016)</h2>
+    <div class="carousel-container">
+      <button class="carousel-btn left" onclick="moveCarousel('squareOne', -1)">&#10094;</button>
+      <div class="carousel-track" id="squareOne">
+        <div class="song-card"><img src="images/Boombayah.jpg" alt="Boombayah"><h3>Boombayah</h3></div>
+        <div class="song-card"><img src="images/Whistle.jpg" alt="Whistle"><h3>Whistle</h3></div>
+      </div>
+      <button class="carousel-btn right" onclick="moveCarousel('squareOne', 1)">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- ===== Álbum 2: Square Two ===== -->
+  <section class="album-section">
+    <h2 class="album-title">Square Two (2016)</h2>
+    <div class="carousel-container">
+      <button class="carousel-btn left" onclick="moveCarousel('squareTwo', -1)">&#10094;</button>
+      <div class="carousel-track" id="squareTwo">
+        <div class="song-card"><img src="images/Playing.jpg" alt="Playing With Fire"><h3>Playing With Fire</h3></div>
+        <div class="song-card"><img src="images/Stay.jpg" alt="Stay"><h3>Stay</h3></div>
+      </div>
+      <button class="carousel-btn right" onclick="moveCarousel('squareTwo', 1)">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- ===== Álbum 3: Blackpink (Japan EP 2017) ===== -->
+  <section class="album-section">
+    <h2 class="album-title">Blackpink (2017, Japan EP)</h2>
+    <div class="carousel-container">
+      <button class="carousel-btn left" onclick="moveCarousel('blackpinkEP', -1)">&#10094;</button>
+      <div class="carousel-track" id="blackpinkEP">
+        <div class="song-card"><img src="images/FJ.jpg" alt="Blackpink"><h3>Blackpink</h3></div>
+        <div class="song-card"><img src="images/Whistle.jpg" alt="Whistle"><h3>Whistle</h3></div>
+        <div class="song-card"><img src="images/Forever.jpg" alt="Forever Young"><h3>Forever Young</h3></div>
+        <div class="song-card"><img src="images/DDD.jpg" alt="DDU-DU DDU-DU"><h3>DDU-DU DDU-DU</h3></div>
+        <div class="song-card"><img src="images/AFIYL.jpg" alt="As If Its Your Last"><h3>As If Its Your Last</h3></div>
+      </div>
+      <button class="carousel-btn right" onclick="moveCarousel('blackpinkEP', 1)">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- ===== Álbum 4: Kill This Love ===== -->
+  <section class="album-section">
+    <h2 class="album-title">Kill This Love (2019, EP)</h2>
+    <div class="carousel-container">
+      <button class="carousel-btn left" onclick="moveCarousel('killThisLove', -1)">&#10094;</button>
+      <div class="carousel-track" id="killThisLove">
+        <div class="song-card"><img src="images/KTL.jpg" alt="Kill This Love"><h3>Kill This Love</h3></div>
+        <div class="song-card"><img src="images/DDD.jpg" alt="DDU-DU DDU-DU"><h3>DDU-DU DDU-DU</h3></div>
+        <div class="song-card"><img src="images/DKWTD.jpg" alt="Don't Know What To Do"><h3>Don't Know What To Do</h3></div>
+        <div class="song-card"><img src="images/Kick.jpg" alt="Kick It"><h3>Kick It</h3></div>
+        <div class="song-card"><img src="images/Hope.jpg" alt="Hope Not"><h3>Hope Not</h3></div>
+      </div>
+      <button class="carousel-btn right" onclick="moveCarousel('killThisLove', 1)">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- ===== Álbum 5: The Album ===== -->
+  <section class="album-section">
+    <h2 class="album-title">The Album (2020)</h2>
+    <div class="carousel-container">
+      <button class="carousel-btn left" onclick="moveCarousel('theAlbum', -1)">&#10094;</button>
+      <div class="carousel-track" id="theAlbum">
+        <div class="song-card"><img src="images/The.jpg" alt="The Album"><h3>The Album</h3></div>
+        <div class="song-card"><img src="images/HYLT.png" alt="How You Like That"><h3>How You Like That</h3></div>
+        <div class="song-card"><img src="images/Lovesick.jpg" alt="Lovesick Girls"><h3>Lovesick Girls</h3></div>
+        <div class="song-card"><img src="images/Ice.jpg" alt="Ice Cream"><h3>Ice Cream</h3></div>
+        <div class="song-card"><img src="images/Preety.jpg" alt="Pretty Savage"><h3>Pretty Savage</h3></div>
+        <div class="song-card"><img src="images/Bet.jpg" alt="Bet You Wanna"><h3>Bet You Wanna</h3></div>
+        <div class="song-card"><img src="images/LoveT.jpg" alt="Love To Hate Me"><h3>Love To Hate Me</h3></div>
+        <div class="song-card"><img src="images/Crazy.jpg" alt="Crazy Over You"><h3>Crazy Over You</h3></div>
+        <div class="song-card"><img src="images/Tgirls.jpg" alt="The Girls"><h3>The Girls</h3></div>
+      </div>
+      <button class="carousel-btn right" onclick="moveCarousel('theAlbum', 1)">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- ===== Álbum 6: Born Pink ===== -->
+  <section class="album-section">
+    <h2 class="album-title">Born Pink (2022)</h2>
+    <div class="carousel-container">
+      <button class="carousel-btn left" onclick="moveCarousel('bornPink', -1)">&#10094;</button>
+      <div class="carousel-track" id="bornPink">
+        <div class="song-card"><img src="images/BornPink.jpg" alt="Born Pink"><h3>Born Pink</h3></div>
+        <div class="song-card"><img src="images/PinkVenom.jpg" alt="Pink Venom"><h3>Pink Venom</h3></div>
+        <div class="song-card"><img src="images/Shut.jpg" alt="Shut Down"><h3>Shut Down</h3></div>
+        <div class="song-card"><img src="images/Typa.jpg" alt="Typa Girl"><h3>Typa Girl</h3></div>
+        <div class="song-card"><img src="images/Ready.jpg" alt="Ready For Love"><h3>Ready For Love</h3></div>
+      </div>
+      <button class="carousel-btn right" onclick="moveCarousel('bornPink', 1)">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- ===== Singles ===== -->
+  <section class="album-section">
+    <h2 class="album-title">Singles</h2>
+    <div class="carousel-container">
+      <button class="carousel-btn left" onclick="moveCarousel('singles', -1)">&#10094;</button>
+      <div class="carousel-track" id="singles">
+        <div class="song-card"><img src="images/AFIYL.jpg" alt="As If It’s Your Last"><h3>As If It’s Your Last</h3></div>
+        <div class="song-card"><img src="images/Kiss.jpg" alt="Kiss and Make Up"><h3>Kiss and Make Up</h3></div>
+        <div class="song-card"><img src="images/Sour.jpg" alt="Sour Candy"><h3>Sour Candy</h3></div>
+        <div class="song-card"><img src="images/Ice.jpg" alt="Ice Cream"><h3>Ice Cream</h3></div>
+        <div class="song-card"><img src="images/Bet.jpg" alt="Bet You Wanna"><h3>Bet You Wanna</h3></div>
+        <div class="song-card"><img src="images/Solo.jpg" alt="Solo"><h3>Solo</h3></div>
+        <div class="song-card"><img src="images/YouAndMe.jpg" alt="You And Me"><h3>You And Me</h3></div>
+        <div class="song-card"><img src="images/Mantra.jpg" alt="Mantra"><h3>Mantra</h3></div>
+        <div class="song-card"><img src="images/LoveHang.jpg" alt="Love Hangover"><h3>Love Hangover</h3></div>
+        <div class="song-card"><img src="images/Lalisa.jpg" alt="Lalisa"><h3>Lalisa</h3></div>
+        <div class="song-card"><img src="images/Money.jpg" alt="Money"><h3>Money</h3></div>
+        <div class="song-card"><img src="images/Rock.jpg" alt="Rockstar"><h3>Rockstar</h3></div>
+        <div class="song-card"><img src="images/WokeUp.jpg" alt="Woke Up"><h3>Woke Up</h3></div>
+        <div class="song-card"><img src="images/Flower.jpg" alt="Flower"><h3>Flower</h3></div>
+        <div class="song-card"><img src="images/All.jpg" alt="All eyes on me"><h3>All eyes on me</h3></div>
+        <div class="song-card"><img src="images/Earth.jpg" alt="Earth Quake"><h3>Earth Quake</h3></div>
+        <div class="song-card"><img src="images/Hugs.jpg" alt="Hugs and Kisses"><h3>Hugs and Kisses</h3></div>
+        <div class="song-card"><img src="images/Your.jpg" alt="Your Love"><h3>Your Love</h3></div>
+        <div class="song-card"><img src="images/Gone.jpg" alt="Gone"><h3>Gone</h3></div>
+        <div class="song-card"><img src="images/OnThe.jpg" alt="On The Ground"><h3>On The Ground</h3></div>
+        <div class="song-card"><img src="images/Toxic.jpg" alt="Toxic Till The End"><h3>Toxic Till The End</h3></div>
+        <div class="song-card"><img src="images/APT.jpg" alt="APT"><h3>APT</h3></div>
+        <div class="song-card"><img src="images/Like.jpg" alt="Like Jennie"><h3>Like Jennie</h3></div>
+
+      </div>
+      <button class="carousel-btn right" onclick="moveCarousel('singles', 1)">&#10095;</button>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2025 BLACKPINK Fanpage — Created by Emily</p>
+</footer>
+
+<script>
+// ===== Función del carrusel =====
+function moveCarousel(id, direction) {
+  const track = document.getElementById(id);
+  const cardWidth = track.querySelector('.song-card').offsetWidth + 16; // +margin
+  const currentTransform = getComputedStyle(track).transform.match(/matrix.*\((.+)\)/);
+  let currentX = 0;
+  if (currentTransform) currentX = parseFloat(currentTransform[1].split(', ')[4]);
+  let newX = currentX + (direction * cardWidth);
+  const maxScroll = -(track.scrollWidth - track.clientWidth);
+  if (newX > 0) newX = 0;
+  if (newX < maxScroll) newX = maxScroll;
+  track.style.transform = `translateX(${newX}px)`;
+}
+</script>
+</body>
+</html>

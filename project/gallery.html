@@ -1,1 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BLACKPINK Gallery</title>
+<link rel="stylesheet" href="styles/bp.css">
+<style>
+/* ===== Galería ===== */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem;
+}
 
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .caption {
+  opacity: 1;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ff66b2;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>BLACKPINK Gallery</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="members.html">Members</a>
+    <a href="discography.html">Discography</a>
+    <a href="gallery.html">Gallery</a>
+  </nav>
+</header>
+
+<main>
+  <div class="gallery-container">
+
+    <!-- Jennie -->
+    <div class="gallery-item">
+      <img src="images/Jennieco.jpg" alt="Jennie Coachella 2019">
+      <div class="caption">Jennie Coachella 2019</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/JennieHow.jpg" alt="Jennie How You Like That MV">
+      <div class="caption">Jennie How You Like That MV</div>
+    </div>
+
+    <!-- Jisoo -->
+    <div class="gallery-item">
+      <img src="images/Jisooco.jpg" alt="Jisoo Coachella 2019">
+      <div class="caption">Jisoo Coachella 2019</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/JisooIce.jpg" alt="Jisoo Ice Cream MV">
+      <div class="caption">Jisoo Ice Cream MV</div>
+    </div>
+
+    <!-- Rosé -->
+    <div class="gallery-item">
+      <img src="images/Roseco.jpg" alt="Rosé Concert 2020">
+      <div class="caption">Rosé Concert 2020</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/RoseHow.jpg" alt="Rosé How You Like That MV">
+      <div class="caption">Rosé How You Like That MV</div>
+    </div>
+
+    <!-- Lisa -->
+    <div class="gallery-item">
+      <img src="images/Lisaco.jpg" alt="Lisa Coachella 2019">
+      <div class="caption">Lisa Coachella 2019</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/LalisaMv.jpg" alt="Lisa Lalisa MV">
+      <div class="caption">Lisa Lalisa MV</div>
+    </div>
+
+    <!-- Puedes seguir agregando más imágenes -->
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 BLACKPINK Fanpage — Created by Emily</p>
+</footer>
+</body>
+</html>
